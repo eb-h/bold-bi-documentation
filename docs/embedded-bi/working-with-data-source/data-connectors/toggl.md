@@ -31,7 +31,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Toggl REST API endpoint in the URL textbox. Refer the [Toggl API documentation](https://github.com/toggl/toggl_api_docs/) for more details.
 
-    Example: [https://www.toggl.com/api/v8/dashboard/&lt;:workspace_id&gt;](https://www.toggl.com/api/v8/dashboard/%3c:workspace_id%3e)    
+    Example: [https://api.track.toggl.com/api/v8/dashboard/&lt;:workspace_id&gt;](https://api.track.toggl.com/api/v8/dashboard/%3c:workspace_id%3e)    
 
 3. Select **GET** method for the REST API in **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Toggl data source. This value is used to fetch the data from Toggl data source via pagination.
@@ -61,7 +61,7 @@ Authenticate your Toggl account like below:
 
 
 #### How do I get API Token for connecting Toggl data source?
-1. Login to your [Toggl](https://toggl.com/login/) account. 
+1. Login to your [Toggl](https://api.track.toggl.com/login/) account. 
 2. Go to *Profile Settings -> API Token*.
 
    ![API Token](/static/assets/embedded/working-with-datasource/data-connectors/images/Toggl/APIToken.png) 
@@ -94,7 +94,7 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 Replace it in the URL to query a particular workspace:
 
-[https://www.toggl.com/api/v8/dashboard/workspaces/&lt;:workspace_id&gt;](https://www.toggl.com/api/v8/dashboard/workspaces/%3c:workspace_id%3e)
+[https://api.track.toggl.com/api/v8/dashboard/workspaces/&lt;:workspace_id&gt;](https://api.track.toggl.com/api/v8/dashboard/workspaces/%3c:workspace_id%3e)
 
 #### Mandatory Parameters for Reports API
 Below request parameters are mandatory to access the report APIs
@@ -104,36 +104,36 @@ Below request parameters are mandatory to access the report APIs
 ### Sample queries
 **Tasks**
 
-[https://www.toggl.com/api/v8/tasks/12345](https://www.toggl.com/api/v8/tasks/12345)
+[https://api.track.toggl.com/api/v8/tasks/12345](https://api.track.toggl.com/api/v8/tasks/12345)
 
 **Projects**
 
-[https://www.toggl.com/api/v8/projects](https://www.toggl.com/api/v8/projects)
+[https://api.track.toggl.com/api/v8/projects](https://api.track.toggl.com/api/v8/projects)
 
 **Get list of project users in a Workspace**
 
-[https://www.toggl.com/api/v8/workspaces/12345/project_users](https://www.toggl.com/api/v8/workspaces/12345/project_users)
+[https://api.track.toggl.com/api/v8/workspaces/12345/project_users](https://api.track.toggl.com/api/v8/workspaces/12345/project_users)
 
 **Get users of specific workspace**
 
-[https://www.toggl.com/api/v8/workspaces/12345/users](https://www.toggl.com/api/v8/workspaces/12345/users)
+[https://api.track.toggl.com/api/v8/workspaces/12345/users](https://api.track.toggl.com/api/v8/workspaces/12345/users)
 
 **Get Dashboard Data**
 
-[https://www.toggl.com/api/v8/dashboard/12345](https://www.toggl.com/api/v8/dashboard/12345)
+[https://api.track.toggl.com/api/v8/dashboard/12345](https://api.track.toggl.com/api/v8/dashboard/12345)
 
 ### Reports API Sample Queries
 **Weekly Report URL**
 
-[https://toggl.com/reports/api/v2/weekly?user_agent=application_name&workspace_id=12345](https://toggl.com/reports/api/v2/weekly?user_agent=application_name&workspace_id=12345)
+[https://api.track.toggl.com/reports/api/v2/weekly?user_agent=application_name&workspace_id=12345](https://api.track.toggl.com/reports/api/v2/weekly?user_agent=application_name&workspace_id=12345)
 
 **Detailed Report URL**
 
-[https://toggl.com/reports/api/v2/details?user_agent=application_name&workspace_id=12345](https://toggl.com/reports/api/v2/details?user_agent=application_name&workspace_id=12345)
+[https://api.track.toggl.com/reports/api/v2/details?user_agent=application_name&workspace_id=12345](https://api.track.toggl.com/reports/api/v2/details?user_agent=application_name&workspace_id=12345)
 
 **Summary Report URL**
 
-[https://toggl.com/reports/api/v2/summary?user_agent=application_name&workspace_id=12345](https://toggl.com/reports/api/v2/summary?user_agent=application_name&workspace_id=12345)
+[https://api.track.toggl.com/reports/api/v2/summary?user_agent=application_name&workspace_id=12345](https://api.track.toggl.com/reports/api/v2/summary?user_agent=application_name&workspace_id=12345)
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.
